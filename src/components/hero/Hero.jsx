@@ -51,7 +51,7 @@ const Button = styled.button`
   border: 2px solid darkblue;
   border-radius: 10px;
   background: linear-gradient(to right, aliceblue 50%, darkblue 50%);
-  background-size: 200% 100%;
+  background-size: 200% 100% ;
   background-position: right bottom;
   transition: all 0.5s ease-out;
   &:hover {
