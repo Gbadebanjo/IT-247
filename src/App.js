@@ -5,6 +5,8 @@ import Hero from './components/hero/Hero';
 import { ThemeProvider } from 'styled-components';
 import { InfoBoxes } from './components/infoboxes/InfoBoxes';
 import { useState } from 'react';
+import InfoSectionOne from './components/infoSectionOne/InfoSectionOne';
+import InfoSectionTwo from './components/infoSectionTwo/InfoSectionTwo';
 // import { ThemeProvider } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   body {
@@ -60,6 +62,8 @@ function App() {
         <Navbar setMode={setMode} mode={mode} />
         <Hero />
         <InfoBoxes />
+        <InfoSectionOne />
+        <InfoSectionTwo />
       </Container>
     </ThemeProvider>
 
