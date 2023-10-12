@@ -9,16 +9,16 @@ const Container = styled.div`
 `;
 
 const Title = styled.div`
-  color: tomato;
+  color: ${(props) => props.theme.colors.secondary};
 `;
 
 const Subtitle = styled.div`
   font-weight: bold;
   font-size: 50px;
   margin: 5px;
-  color: darkblue;
+  color: ${(props) => props.theme.colors.primary};
 `;
-export const TextBanner = ({ title, subtitle }) => {
+ export const TextBanner = ({ title, subtitle }) => {
   return (
     <Container>
       <Title>{title}</Title>
@@ -26,3 +26,6 @@ export const TextBanner = ({ title, subtitle }) => {
     </Container>
   );
 };
+
+
+

@@ -17,7 +17,7 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`
-  background-color: white;
+  background-color: ${(props) => props.theme.colors.bgDefault};
   width: 40%;
   display: flex;
   align-items: center;
@@ -27,13 +27,13 @@ const Title = styled.div`
   width: 60%;
   font-size: 40px;
   font-weight: bold;
-  color: darkblue;
+  color: ${(props) => props.theme.colors.primary};
   text-align: center;
 `;
 
 const Description = styled.p`
   font-size: 20px;
-  color: gray;
+  color: ${(props) => props.theme.colors.textDark};
   width: 70%;
 `;
 
@@ -43,20 +43,24 @@ const ButtonsContainer = styled.div`
 
 const Button = styled.button`
   font-weight: bold;
-  color: white;
-  background-color: darkblue;
+  color: ${(props) => props.theme.colors.bgDefault};
+  background-color: ${(props) => props.theme.colors.primary};
   margin-left: 5px;
   padding: 15px 30px;
   cursor: pointer;
-  border: 2px solid darkblue;
+  border: 2px solid ${(props) => props.theme.colors.primary};
   border-radius: 10px;
-  background: linear-gradient(to right, aliceblue 50%, darkblue 50%);
-  background-size: 200% 100% ;
+  background: linear-gradient(
+    to right,
+    ${(props) => props.theme.colors.bgLight} 50%,
+    ${(props) => props.theme.colors.primary} 50%
+  );
+  background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
   &:hover {
-    color: darkblue;
-    border: 2px solid blue;
+    color: ${(props) => props.theme.colors.primary};
+    border: 2px solid ${(props) => props.theme.colors.hoverColor};
     background-position: left bottom;
     cursor: pointer;
   }

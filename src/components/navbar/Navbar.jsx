@@ -6,7 +6,7 @@ import DarkImage from "../../image/darkmode.svg";
 const Container = styled.div`
   width: 100%;
   height: 10%;
-  background-color: ${(props) => props.theme.colors.bgTerteriary};
+  background-color: ${(props) => props.theme.colors.bgDefault};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,8 +32,8 @@ const Right = styled.div`
 const Logo = styled.h1`
   font-size: 20px;
   text-decoration: underline;
-  color: darkblue;
-  cussor: pointer;
+  color: ${(props) => props.theme.colors.primary};
+  cursor: pointer;
 `;
 
 const Menu = styled.ul`
@@ -45,24 +45,24 @@ const MenuItem = styled.li`
   font-size: 20px;
   font-weight: bold;
   margin-right: 30px;
-  color: gray;
+  color: ${(props) => props.theme.colors.textDark};
   cussor: pointer;
   &:hover {
-    color: darkblue;
+    color: ${(props) => props.theme.colors.primary};
   }
 `;
 
 const Button = styled.button`
   font-weight: bold;
-  background-color: darkblue;
+  background-color: ${(props) => props.theme.colors.primary};
   boarder: 2px solid white;
   cursor: pointer;
-  color: white;
+  color: ${(props) => props.theme.colors.bgDefault};
   padding: 10px 20px;
   border-radius: 10px;
   &:hover {
-    background-color: aliceblue;
-    color: darkblue;
+    background-color: ${(props) => props.theme.colors.bgLight};
+    color: ${(props) => props.theme.colors.primary};
     border: 2px solid darkblue;
   }
 `;
@@ -76,9 +76,7 @@ const DarkMode = styled.button`
 DarkImage
 `;
 
-const Icons = styled.div`
-
-`;
+const Icons = styled.div``;
 
 export const Navbar = ({ mode, setMode }) => {
   return (
