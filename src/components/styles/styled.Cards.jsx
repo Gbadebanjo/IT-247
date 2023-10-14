@@ -42,3 +42,10 @@ export const Button = styled.a`
   text-decoration: none;
   cursor: pointer;
 `;
+
+export const CardImage = styled.img`
+height: 100%;
+width: 100%;
+object-fit: cover;
+background attachment: fixed;
+`

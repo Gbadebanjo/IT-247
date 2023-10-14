@@ -1,9 +1,10 @@
+import React from "react";
 import styled from "styled-components";
-import sectionOneImage from "../../image/section1.png";
+import sectionThreeImage from "../../image/section3.png";
 
 const Container = styled.div`
   padding: 10px 20px;
-  margin-top: 4%;
+  margin-top: 6%;
 `;
 const Wrapper = styled.div`
   display: flex;
@@ -21,6 +22,7 @@ const Header = styled.div`
 const Title = styled.div`
   color: ${(props) => props.theme.colors.secondary};
   font-weight: bold;
+  padding-bottom: 10px
 `;
 
 const Description = styled.p`
@@ -60,17 +62,14 @@ const ListItem = styled.li`
   -webkit-box-shadow: 0px -1px 15px -5px #dad0d0;
 `;
 
-const InfoSectionOne = () => {
+const InfoSectionThree = () => {
   return (
     <Container>
       <Wrapper>
         {" "}
-        <Right>
-          <Image src={sectionOneImage} />
-        </Right>
         <Left>
-          <Title>Why Choose Us?</Title>
-          <Header>IT lifecycle management all in one place</Header>
+          <Title>WHY TRUST US?</Title>
+          <Header>Sofware Asset Management (SAM) / Software Lifecycle Management</Header>
           <Description>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
             repudiandae at quo obcaecati, ex blanditiis suscipit ipsa aperiam
@@ -78,17 +77,20 @@ const InfoSectionOne = () => {
             nihil veniam culpa provident?
           </Description>
           <List>
-            <ListItem>Global IT sourcing</ListItem>
-            <ListItem>Transparent advice</ListItem>
-            <ListItem>Software refuelling</ListItem>
-            <ListItem>Nationwide service network</ListItem>
-            <ListItem>International deliverables</ListItem>
+            <ListItem>Connection to shop systems</ListItem>
             <ListItem>Volume bundling</ListItem>
+            <ListItem>End-of-life management</ListItem>
+            <ListItem>Certified data deletion</ListItem>
+            <ListItem>Returns programme</ListItem>
+            <ListItem>Guarantee processing</ListItem>
           </List>
         </Left>
+        <Right>
+          <Image src={sectionThreeImage} />
+        </Right>
       </Wrapper>
     </Container>
   );
 };
 
-export default InfoSectionOne;
+export default InfoSectionThree;

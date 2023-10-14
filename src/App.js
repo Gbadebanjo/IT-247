@@ -7,6 +7,10 @@ import { InfoBoxes } from './components/infoboxes/InfoBoxes';
 import { useState } from 'react';
 import InfoSectionOne from './components/infoSectionOne/InfoSectionOne';
 import InfoSectionTwo from './components/infoSectionTwo/InfoSectionTwo';
+import InfoSectionThree from './components/infoSectionThree/InfoSectionThree';
+import InfoSectionFour from './components/infoSectionFour/InfoSectionFour';
+import Team from './components/team/Team';
+import Blogs from './components/blogs/Blogs';
 // import { ThemeProvider } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   body {
@@ -64,6 +68,10 @@ function App() {
         <InfoBoxes />
         <InfoSectionOne />
         <InfoSectionTwo />
+        <InfoSectionThree />
+        <InfoSectionFour />
+        <Team />
+        <Blogs />
       </Container>
     </ThemeProvider>
 
