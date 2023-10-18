@@ -11,8 +11,13 @@ import InfoSectionThree from './components/infoSectionThree/InfoSectionThree';
 import InfoSectionFour from './components/infoSectionFour/InfoSectionFour';
 import Team from './components/team/Team';
 import Blogs from './components/blogs/Blogs';
+import Footer from './components/footer/Footer';
 // import { ThemeProvider } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
+* {
+  margin: 0;
+  padding: 0;
+}
   body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
@@ -72,6 +77,7 @@ function App() {
         <InfoSectionFour />
         <Team />
         <Blogs />
+        <Footer/>
       </Container>
     </ThemeProvider>
 

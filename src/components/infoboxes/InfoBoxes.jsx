@@ -20,39 +20,39 @@ export const InfoBoxes = () => {
     <div>
       <TextBanner
         title={"What we provide"}
-        subtitle={"our services"}
-      ></TextBanner>
+        subtitle={"Our services"}
+      />
       <Container>
         <Card>
-          <CardContent>
+          <CardContent padding={"5%"}>
             <CardTitle>Training Plans</CardTitle>
             <Description>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ipsa quia voluptas facilis ipsum, magni, explicabo ducimus porro laborum quidem maiores officiis repudiandae repellendus deleniti culpa dolorem reprehenderit veritatis non.</Description>
             <Button href="#">Read more...</Button>
           </CardContent>
         </Card>
         <Card>
-          <CardContent>
+          <CardContent padding={"5%"}>
             <CardTitle>Data Services</CardTitle>
             <Description>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ipsa quia voluptas facilis ipsum, magni, explicabo ducimus porro laborum quidem maiores officiis repudiandae repellendus deleniti culpa dolorem reprehenderit veritatis non.</Description>
             <Button href="#">Read more...</Button>
           </CardContent>
         </Card>
         <Card>
-          <CardContent>
+          <CardContent padding={"5%"}>
             <CardTitle>Call Plans</CardTitle>
             <Description>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ipsa quia voluptas facilis ipsum, magni, explicabo ducimus porro laborum quidem maiores officiis repudiandae repellendus deleniti culpa dolorem reprehenderit veritatis non.</Description>
             <Button href="#">Read more...</Button>
           </CardContent>
         </Card>
         <Card>
-          <CardContent>
+          <CardContent padding={"5%"}>
             <CardTitle>Customer Support</CardTitle>
             <Description>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ipsa quia voluptas facilis ipsum, magni, explicabo ducimus porro laborum quidem maiores officiis repudiandae repellendus deleniti culpa dolorem reprehenderit veritatis non.</Description>
             <Button href="#">Read more...</Button>
           </CardContent>
         </Card>
         <Card>
-          <CardContent>
+          <CardContent padding={"5%"}>
             <CardTitle>Proactive Services</CardTitle>
             <Description>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ipsa quia voluptas facilis ipsum, magni, explicabo ducimus porro laborum quidem maiores officiis repudiandae repellendus deleniti culpa dolorem reprehenderit veritatis non.</Description>
             <Button href="#">Read more...</Button>
@@ -60,7 +60,7 @@ export const InfoBoxes = () => {
         </Card>
         <Card>
           <CardContent>
-            <CardTitle>24/7 Services</CardTitle>
+            <CardTitle padding={"5%"}>24/7 Services</CardTitle>
             <Description>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ipsa quia voluptas facilis ipsum, magni, explicabo ducimus porro laborum quidem maiores officiis repudiandae repellendus deleniti culpa dolorem reprehenderit veritatis non.</Description>
             <Button href="#">Read more...</Button>
           </CardContent>

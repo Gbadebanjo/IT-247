@@ -20,7 +20,7 @@ export const CardContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: ${({padding}) => padding};
 `;
 
 export const CardTitle = styled.h3`
@@ -47,5 +47,5 @@ export const CardImage = styled.img`
 height: 100%;
 width: 100%;
 object-fit: cover;
-background attachment: fixed;
+
 `

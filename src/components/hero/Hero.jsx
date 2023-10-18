@@ -5,6 +5,16 @@ import heroImage from "../../image/hero.png";
 const Container = styled.div`
   display: flex;
   height: 90%;
+
+  @media only screen and (max-width: 600px) {
+    height: 60%;
+  }
+  @media only screen and (min-width: 600px) {
+    height: 60%;
+  }
+  @media only screen and (min-width: 992px) {
+    height: 80%;
+  }
 `;
 
 const Left = styled.div`
@@ -14,6 +24,15 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+  @media only screen and (min-width: 600px) {
+    width: 50%;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 60%;
+  }
 `;
 
 const Right = styled.div`
@@ -21,6 +40,9 @@ const Right = styled.div`
   width: 40%;
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const Title = styled.div`
@@ -29,12 +51,41 @@ const Title = styled.div`
   font-weight: bold;
   color: ${(props) => props.theme.colors.primary};
   text-align: center;
+
+  //for mobiles
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    font-size: 28px;
+    padding-bottom: 2%;
+  }
+  @media only screen and (min-width: 600px) {
+    width: 85%;
+    font-size: 30px;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 85%;
+    font-size: 40px;
+  }
 `;
 
 const Description = styled.p`
   font-size: 20px;
   color: ${(props) => props.theme.colors.textDark};
+  margin-buttom: 2%;
   width: 70%;
+  //for mobiles
+  @media only screen and (max-width: 600px) {
+    width: 80%
+    text-align: center;
+  }
+  @media only screen and (min-width: 600px) {
+    width: 70%
+    margin-top: 2%;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 70%;
+    margin-top: 2%;
+  } 
 `;
 
 const ButtonsContainer = styled.div`
@@ -64,10 +115,27 @@ const Button = styled.button`
     background-position: left bottom;
     cursor: pointer;
   }
+  //for mobiles
+  @media only screen and (max-width: 600px) {
+    padding: 10px 25px;
+  }
+  @media only screen and (min-width: 600px) {
+    padding: 10px 30px;
+  }
+  @media only screen and (min-width: 992px) {
+    padding: 15px 30px;
+  }
 `;
 
 const Image = styled.img`
   width: 500px;
+  @media only screen and (min-width: 600px) {
+    width: 400px;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 500px;
+    padding-top: 5%;
+  }
 `;
 
 const Hero = () => {
@@ -78,7 +146,7 @@ const Hero = () => {
         <Description>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id qui
           corporis neque labore, laborum voluptate eos amet eaque vel doloribus
-          natus a maiores magni ea voluptatibus exercitationem totam quia alias.
+          natus a maiores magni ea.
         </Description>
         <ButtonsContainer>
           <Button>About Us</Button>
