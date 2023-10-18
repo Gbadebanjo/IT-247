@@ -3,9 +3,20 @@ import sectionImage4 from "../../image/bg2.jpg";
 import { Container } from "../infoSectionTwo/InfoSectionTwo";
 
 const Card = styled.div`
-  width: 250px;
+  width: 350px;
   display: flex;
-  flex-direction: column;; 
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  //for Mobiles
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+  @media only screen and (min-width: 600px) {
+    flex-direction: row;
+  }
+  @media only screen and (min-width: 992px) {
+    flex-direction: row;
 `;
 
 const CardContent = styled.div`

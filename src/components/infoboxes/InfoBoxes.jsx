@@ -13,6 +13,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: ${(props) => props.theme.colors.bgDefault};
 `;
 
 export const InfoBoxes = () => {

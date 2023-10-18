@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Container = styled.div`
-background-color: white;
+background-color: background-color: ${(props) => props.theme.colors.bgDefault};
 height: 100vh;
 `;
 
@@ -41,7 +41,7 @@ const lightTheme = {
     bgPrimary: "darkblue",
     bgSecondary: "darkBlue",
     bgLight: "aliceblue",
-    hoverColor: "blue",
+    hoverColor: "aliceblue",
   },
 };
 

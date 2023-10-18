@@ -6,6 +6,8 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: ${(props) => props.theme.colors.bgDefault};
+  padding: 4%;
 `;
 
 const Title = styled.div`

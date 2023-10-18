@@ -111,7 +111,7 @@ const Button = styled.button`
   padding: 10px 20px;
   border-radius: 10px;
   &:hover {
-    background-color: ${(props) => props.theme.colors.bgLight};
+    background-color: ${(props) => props.theme.colors.hoverColor};
     color: ${(props) => props.theme.colors.primary};
     border: 2px solid darkblue;
   }
@@ -131,7 +131,10 @@ const DarkMode = styled.button`
 DarkImage
 `;
 
-const Icons = styled.div``;
+const StyledFiMoon = styled(FiMoon)`
+  color: ${(props) => props.theme.colors.primary};
+  font-size: 24px;
+`;
 
 export const Navbar = ({ mode, setMode }) => {
   return (
@@ -151,13 +154,7 @@ export const Navbar = ({ mode, setMode }) => {
         </Center>
         <Right>
           <Button>Call us Now!</Button>
-          <Icons>
-            <FiMoon />
-          </Icons>
-
-          <DarkMode onClick={() => setMode(!mode)}>
-            <Image src={DarkImage} />
-          </DarkMode>
+         <StyledFiMoon onClick={() => setMode(!mode)} />
         </Right>
       </Container>
     </>

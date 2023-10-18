@@ -5,13 +5,27 @@ export const Card = styled.div`
   margin: 10px 10px;
   box-shadow: 0px -1px 15px -5px #a8a4a4;
   -webkit-box-shadow: 0px -1px 15px -5px #dad0d0;
-  background: linear-gradient(to right, ${(props) => props.theme.colors.bgLight} 50%, ${(props) => props.theme.colors.bgDefault} 50%);
-  background-size: 200% 100% ;
+  background: linear-gradient(
+    to right,
+    ${(props) => props.theme.colors.hoverColor} 50%,
+    ${(props) => props.theme.colors.bgDefault} 50%
+  );
+  background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
   &:hover {
     color: ${(props) => props.theme.colors.text};
     background-position: left bottom;
+  }
+  //for Mobiles
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+  @media only screen and (min-width: 600px) {
+    width: 350px;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 350px;
   }
 `;
 
@@ -20,13 +34,12 @@ export const CardContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: ${({padding}) => padding};
+  padding: ${({ padding }) => padding};
 `;
 
 export const CardTitle = styled.h3`
   color: ${(props) => props.theme.colors.primary};
   font-weight: bold;
-  
 `;
 
 export const Description = styled.div`
@@ -44,8 +57,7 @@ export const Button = styled.a`
 `;
 
 export const CardImage = styled.img`
-height: 100%;
-width: 100%;
-object-fit: cover;
-
-`
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+`;

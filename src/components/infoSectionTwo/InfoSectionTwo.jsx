@@ -2,7 +2,6 @@ import styled from "styled-components";
 import sectionImage1 from "../../image/laptopDark.jpg";
 
 export const Container = styled.div`
-  margin-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +12,18 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   flex-direction: column;
   background-attachment: fixed;
+  //for Mobiles
+  @media only screen and (max-width: 600px) {
+    background-size: 100% 100%;
+    height: 35%;
+  }
+  @media only screen and (min-width: 600px) {
+    background-size: 100% 100%;
+    height: 35%;
+  }
+  @media only screen and (min-width: 992px) {
+    background-size: cover;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -24,22 +35,35 @@ export const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-  color: ${(props) => props.theme.colors.bgDefault};
+  color: ${(props) => props.theme.colors.text};
   font-size: 30px;
   font-weight: bold;
   padding-top: 20px;
 `;
 
 const Description = styled.p`
-  color: ${(props) => props.theme.colors.bgDefault};
+  color: ${(props) => props.theme.colors.text};
   width: 40%;
   font-size: 25px;
   font-weight: lighter;
+  //for Mobiles
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    font-size: 20px;
+    align-items: center;
+  }
+  @media only screen and (min-width: 600px) {
+    width: 80%;
+    align-items: center;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 40%;
+  }
 `;
 
 const InfoSectionTwo = () => {
   return (
-    <Container sectionImage={sectionImage1}>
+    <Container sectionImage={sectionImage1} >
       <Wrapper>
         <Title>Anywhere Workspace!</Title>
         <Description>

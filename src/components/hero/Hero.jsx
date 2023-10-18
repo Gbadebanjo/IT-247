@@ -103,7 +103,7 @@ const Button = styled.button`
   border-radius: 10px;
   background: linear-gradient(
     to right,
-    ${(props) => props.theme.colors.bgLight} 50%,
+    ${(props) => props.theme.colors.hoverColor} 50%,
     ${(props) => props.theme.colors.primary} 50%
   );
   background-size: 200% 100%;

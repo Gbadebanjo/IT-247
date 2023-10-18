@@ -16,6 +16,8 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: ${(props) => props.theme.colors.bgDefault};
+  padding-bottom: 2%;
 `;
 
 const Blogs = () => {

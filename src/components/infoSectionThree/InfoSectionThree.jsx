@@ -3,8 +3,8 @@ import styled from "styled-components";
 import sectionThreeImage from "../../image/section3.png";
 
 const Container = styled.div`
-  padding: 10px 20px;
-  margin-top: 6%;
+  padding: 15px 20px;
+  background-color: ${(props) => props.theme.colors.bgDefault};
 `;
 const Wrapper = styled.div`
   display: flex;

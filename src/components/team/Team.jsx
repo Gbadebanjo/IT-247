@@ -6,7 +6,7 @@ import avatarImage4 from "../../image/staff4.jpg";
 import { TextBanner } from "../textbanner/TextBanner";
 
 const Container = styled.div`
-  padding: 5%;
+  background-color: ${(props) => props.theme.colors.bgDefault};
 `;
 
 const Wrapper = styled.div`

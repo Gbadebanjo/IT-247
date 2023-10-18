@@ -3,7 +3,7 @@ import sectionOneImage from "../../image/section1.png";
 
 const Container = styled.div`
   padding: 10px 20px;
-  margin-top: 4%;
+  background-color: ${(props) => props.theme.colors.bgDefault};
 `;
 const Wrapper = styled.div`
   display: flex;
