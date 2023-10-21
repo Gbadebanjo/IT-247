@@ -122,15 +122,6 @@ const Button = styled.button`
   }
 `;
 
-const Image = styled.img`
-  width: 30px;
-  cursor: pointer;
-`;
-
-const DarkMode = styled.button`
-DarkImage
-`;
-
 const StyledFiMoon = styled(FiMoon)`
   color: ${(props) => props.theme.colors.primary};
   font-size: 24px;
@@ -154,7 +145,7 @@ export const Navbar = ({ mode, setMode }) => {
         </Center>
         <Right>
           <Button>Call us Now!</Button>
-         <StyledFiMoon onClick={() => setMode(!mode)} />
+          <StyledFiMoon onClick={() => setMode(!mode)} />
         </Right>
       </Container>
     </>
