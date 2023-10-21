@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FiMoon } from "react-icons/fi";
 import DarkImage from "../../image/darkmode.svg";
+import { Link } from "react-scroll";
 
 const Container = styled.div`
   margin: 0;
@@ -83,12 +84,13 @@ const Menu = styled.ul`
   list-style: none;
 `;
 
-const MenuItem = styled.li`
+const MenuItem = styled.a`
   font-size: 20px;
   font-weight: bold;
   margin-right: 30px;
   color: ${(props) => props.theme.colors.textDark};
-  cussor: pointer;
+  cursor: pointer;
+  text-decoration: none;
   &:hover {
     color: ${(props) => props.theme.colors.primary};
   }
@@ -136,11 +138,11 @@ export const Navbar = ({ mode, setMode }) => {
         </Left>
         <Center>
           <Menu>
-            <MenuItem>Home</MenuItem>
-            <MenuItem>About us</MenuItem>
-            <MenuItem>Services</MenuItem>
-            <MenuItem>Contact</MenuItem>
-            <MenuItem>Blog</MenuItem>
+            <MenuItem href="/">Home</MenuItem>
+            <MenuItem href="#about">About us</MenuItem>
+            <MenuItem href="#services">Services</MenuItem>
+            <MenuItem href="">Contact</MenuItem>
+            <MenuItem href="#blog">Blog</MenuItem>
           </Menu>
         </Center>
         <Right>

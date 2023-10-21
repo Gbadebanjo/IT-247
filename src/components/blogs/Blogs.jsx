@@ -23,8 +23,8 @@ const Container = styled.div`
 const Blogs = () => {
   return (
     <>
-    <TextBanner title={"Our Blog"} subtitle={"Recent News"} />
-    <Container>
+    <TextBanner  title={"Our Blog"} subtitle={"Recent News"} />
+    <Container id="blog">
       <Card>
         <CardContent padding={"0.5%"}>
           <CardImage src={cardImage1} />

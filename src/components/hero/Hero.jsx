@@ -140,7 +140,7 @@ const Image = styled.img`
 
 const Hero = () => {
   return (
-    <Container>
+    <Container id="">
       <Left>
         <Title>IT-Management - IT Support and IT-Services for everyone!</Title>
         <Description>

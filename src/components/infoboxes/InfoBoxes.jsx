@@ -18,7 +18,7 @@ const Container = styled.div`
 
 export const InfoBoxes = () => {
   return (
-    <div>
+    <div id="services">
       <TextBanner
         title={"What we provide"}
         subtitle={"Our services"}

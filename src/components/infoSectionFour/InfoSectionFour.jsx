@@ -42,7 +42,7 @@ const SubTitle = styled.div`
 
 const InfoSectionFour = () => {
   return (
-    <Container sectionImage={sectionImage4} Height={"300px"}>
+    <Container id="about" sectionImage={sectionImage4} Height={"300px"}>
       <Card>
         <CardContent>
           <Number>10,000+</Number>
