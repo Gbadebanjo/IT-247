@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FiMoon } from "react-icons/fi";
-import DarkImage from "../../image/darkmode.svg";
-import { Link } from "react-scroll";
+
 
 const Container = styled.div`
   margin: 0;
